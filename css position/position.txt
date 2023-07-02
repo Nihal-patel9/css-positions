@@ -1,0 +1,84 @@
+Static:
+The default position value for elements.
+Elements with position: static are positioned according to the normal flow of the document.
+They are not affected by the top, bottom, left, right, or z-index properties.
+
+<div class="static-position">
+  This is a static positioned element.
+</div>
+
+.static-position {
+  position: static;
+}
+
+
+
+Fixed:
+The element is positioned relative to the viewport (browser window).
+It remains fixed in its position even when the page is scrolled.
+Use top, bottom, left, right properties to control the exact position.
+
+
+<div class="fixed-position">
+  This is a fixed positioned element.
+</div>
+
+.fixed-position {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+}
+
+
+Sticky:
+The element behaves like position: relative within its parent until a specified threshold (top/bottom position) is reached, then it becomes position: fixed.
+It is positioned relative to its nearest scrolling ancestor or the viewport if no scrolling ancestor exists.
+Useful for creating sticky headers or navigation menus that stay visible as the user scrolls.
+
+
+<div class="sticky-position">
+  This is a sticky positioned element.
+</div>
+
+.sticky-position {
+  position: sticky;
+  top: 20px;
+}
+
+Relative:
+The element is positioned relative to its normal position in the document flow.
+It does not affect the positioning of other elements.
+Use top, bottom, left, right properties to move the element from its normal position.
+
+
+<div class="relative-position">
+  This is a relative positioned element.
+</div>
+
+
+.relative-position {
+  position: relative;
+  top: 20px;
+  left: 20px;
+}
+
+
+Absolute:
+The element is positioned relative to its nearest positioned ancestor (a parent element with position other than static) or the initial containing block if no positioned ancestor exists.
+It is taken out of the normal document flow, and other elements are positioned as if it doesn't exist.
+Use top, bottom, left, right properties to specify the exact position.
+
+
+<div class="absolute-position">
+  This is an absolute positioned element.
+</div>
+
+.absolute-position {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+
+
+
